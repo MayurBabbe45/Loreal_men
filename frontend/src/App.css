@@ -4,7 +4,7 @@
 @plugin "daisyui/theme" {
   name: "black";
   --color-primary: rgb(29, 155, 240);
-  --color-secondary: rgb(24, 24, 24);
+  --color-secondary: rgb(91, 33, 182); /* purple-700 */
 }
 
 @plugin "daisyui/theme" {
