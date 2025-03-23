@@ -9,6 +9,7 @@ import { MdPassword } from "react-icons/md";
 import { MdDriveFileRenameOutline } from "react-icons/md";
 import toast from "react-hot-toast";
 import { useMutation} from "@tanstack/react-query";
+import SS_logo from "../../../assets/SS_logo.svg";
 
 
 const SignUpPage = () => {
@@ -56,12 +57,12 @@ const SignUpPage = () => {
 
 	return (
 		<div className='max-w-screen-xl mx-auto flex h-screen'>
-			<div className='flex-1 hidden lg:flex items-center  justify-center'>
-				<SleekSpeak className=' lg:w-2/3 fill-white' />
+			<div className='flex-1 hidden lg:flex items-center justify-center'>
+				<img src={SS_logo} alt="SleekSpeak" className="w-10 h-10 md:w-100 md:h-100" />
 			</div>
 			<div className='flex-1 flex flex-col justify-center items-center'>
 				<form className='flex gap-4 flex-col' onSubmit={handleSubmit}>
-					<SleekSpeak className='w-24 lg:hidden fill-white' />
+					<img src={SS_logo} alt="SleekSpeak" className="w-50 h-20 bg-purple-700 rounded-full lg:hidden" />
 					<h1 className='text-4xl font-extrabold text-white'>Join today.</h1>
 					<label className='input input-bordered rounded flex items-center gap-2'>
 						<MdOutlineMail />
@@ -108,7 +109,7 @@ const SignUpPage = () => {
 						/>
 					</label>
 					<button className='btn rounded-full border-purple-700 btn-primary text-white bg-purple-700'>
-					{isPending ? "Loading..." : "Sign up"}
+						{isPending ? "Loading..." : "Sign up"}
 					</button>
 					{isError && <p className='text-red-500'>{error.message}</p>}
 				</form>

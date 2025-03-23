@@ -40,7 +40,9 @@ const Sidebar = () => {
     <div className="md:flex-[2_2_0] w-18 max-w-52">
       <div className="sticky top-0 left-0 h-screen flex flex-col border-r border-gray-700 w-20 md:w-full">
         <div className="flex justify-center md:justify-start">
-          <img src={SS_logo} className="w-8 h-8 md:w-10 md:h-10" alt="Logo" />
+          <Link to="/" className="flex items-center mt-4">
+            <img src={SS_logo} alt="SleekSpeak" className="w-10 h-10 md:w-20 md:h-20 bg-purple-700 rounded-full" />
+          </Link>
         </div>
         <ul className="flex flex-col gap-3 mt-4">
           <li className="flex justify-center md:justify-start">
@@ -48,8 +50,8 @@ const Sidebar = () => {
               to="/"
               className="flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer"
             >
-              <MdHomeFilled className="w-8 h-8 hover:text-purple-700" />
-              <span className="text-lg hidden md:block">Home</span>
+              <MdHomeFilled className="w-6 h-6 md:w-10 md:h-10 hover:text-purple-700" />
+              <span className="text-sm md:text-lg hidden md:block">Home</span>
             </Link>
           </li>
           <li className="flex justify-center md:justify-start">
@@ -57,8 +59,8 @@ const Sidebar = () => {
               to="/notifications"
               className="flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer"
             >
-              <IoNotifications className="w-6 h-6 hover:text-purple-700" />
-              <span className="text-lg hidden md:block">Notifications</span>
+              <IoNotifications className="w-6 h-6 md:w-8 md:h-8 hover:text-purple-700" />
+              <span className="text-sm md:text-lg hidden md:block">Notifications</span>
             </Link>
           </li>
 
@@ -67,8 +69,8 @@ const Sidebar = () => {
               to={`/profile/${authUser?.username}`}
               className="flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer"
             >
-              <FaUser className="w-6 h-6 hover:text-purple-700" />
-              <span className="text-lg hidden md:block">Profile</span>
+              <FaUser className="w-6 h-6 md:w-8 md:h-8 hover:text-purple-700" />
+              <span className="text-sm md:text-lg hidden md:block">Profile</span>
             </Link>
           </li>
         </ul>
@@ -78,17 +80,17 @@ const Sidebar = () => {
             className="mt-auto mb-10 flex gap-2 items-start transition-all duration-300 hover:bg-[#181818] py-2 px-4 rounded-full"
           >
             <div className="avatar hidden md:inline-flex">
-              <div className="w-8 rounded-full">
+              <div className="w-6 md:w-10 rounded-full">
                 <img src={authUser?.profileImg || "/avatar-placeholder.png"} />
               </div>
             </div>
             <div className="flex justify-between flex-1">
               <div className="hidden md:block">
-                <p className="text-white font-bold text-sm w-20 truncate">{authUser?.fullName}</p>
-                <p className="text-slate-500 text-sm">@{authUser?.username}</p>
+                <p className="text-white font-bold text-xs md:text-sm w-20 truncate">{authUser?.fullName}</p>
+                <p className="text-slate-500 text-xs md:text-sm">@{authUser?.username}</p>
               </div>
               <BiLogOut
-                className="w-5 h-5 cursor-pointer hover:text-purple-700"
+                className="w-4 h-4 md:w-6 md:h-6 cursor-pointer hover:text-purple-700"
                 onClick={(e) => {
                   e.preventDefault();
                   logout();
