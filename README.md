@@ -1,7 +1,5 @@
 # SleekSpeak
 
-![SleekSpeak Logo](https://via.placeholder.com/800x400?text=SleekSpeak)
-
 ## 🌟 Overview
 **SleekSpeak** is a modern and intuitive web application designed to enhance communication and engagement. Whether for communities, businesses, or casual conversations, it offers a seamless and user-friendly interface.
 
