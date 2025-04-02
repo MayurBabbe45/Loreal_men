@@ -3,12 +3,9 @@ import { IoNotifications } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { BiLogOut } from "react-icons/bi";
-import SleekSpeak from "../svgs/SleekSpeak";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 import SS_logo from "../../assets/SS_logo.svg";
-import { useQueryClient, useQuery } from "@tanstack/react-query";
-
 
 const Sidebar = () => {
   const queryClient = useQueryClient();
@@ -34,7 +31,7 @@ const Sidebar = () => {
     },
   });
 
-  const {data: authUser} = useQuery({queryKey:["authUser"]});
+  const { data: authUser } = useQuery({ queryKey: ["authUser"] });
 
   return (
     <div className="md:flex-[2_2_0] w-18 max-w-52">
@@ -63,7 +60,6 @@ const Sidebar = () => {
               <span className="text-sm md:text-lg hidden md:block">Notifications</span>
             </Link>
           </li>
-
           <li className="flex justify-center md:justify-start">
             <Link
               to={`/profile/${authUser?.username}`}
@@ -71,6 +67,15 @@ const Sidebar = () => {
             >
               <FaUser className="w-6 h-6 md:w-8 md:h-8 hover:text-purple-700" />
               <span className="text-sm md:text-lg hidden md:block">Profile</span>
+            </Link>
+          </li>
+          <li className="flex justify-center md:justify-start">
+            <Link
+              to="/about"
+              className="flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer"
+            >
+              <img src={SS_logo} alt="SleekSpeak" className="w-6 h-6 md:w-8 md:h-8 hover:text-purple-700" />
+              <span className="text-sm md:text-lg hidden md:block">About Us</span>
             </Link>
           </li>
         </ul>

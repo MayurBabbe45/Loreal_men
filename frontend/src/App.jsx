@@ -6,7 +6,7 @@ import HomePage from "./pages/home/HomePage";
 
 import NotificationPage from "./pages/notification/NotificationPage.jsx";
 import ProfilePage from "./pages/profile/ProfilePage.jsx";
-
+import AboutPage from "./pages/aboutUs/about.jsx";
 import Sidebar from "./components/common/Sidebar.jsx";
 import RightPanel from "./components/common/RightPanel.jsx";
 import { Toaster } from "react-hot-toast";
@@ -67,6 +67,10 @@ function App() {
         <Route
           path="/profile/:username"
           element={authUser ? <ProfilePage /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/about"
+          element={<AboutPage />} // Add the About page route
         />
       </Routes>
       {authUser && <RightPanel />}
