@@ -4,19 +4,17 @@
 **SleekSpeak** is a modern and intuitive web application designed to enhance communication and engagement. Whether for communities, businesses, or casual conversations, it offers a seamless and user-friendly interface.
 
 ## 🚀 Features
-- 🗣 **Real-Time Chat** – Instant messaging with sleek UI.
-- 🎨 **Customizable Themes** – Personalize your chat experience.
-- 🔒 **End-to-End Encryption** – Secure and private conversations.
-- 🌍 **Multi-Language Support** – Communicate without barriers.
-- 📱 **Responsive Design** – Optimized for all devices.
-- 📊 **Analytics & Insights** – Get valuable conversation trends.
+- 📝 **Create Posts** – Share your thoughts, experiences, and updates with your network.
+- ❤️ **Like Posts** – Show appreciation by liking your friends' posts.
+- 🤝 **Connect with Friends** – Expand your social circle by connecting with others.
+
 
 ## 🛠 Tech Stack
-- **Frontend:** React.js, Tailwind CSS, Material-UI
+- **Frontend:** React.js, Tailwind CSS
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
 - **Authentication:** Firebase / JWT
-- **Hosting:** Vercel / Netlify
+- **Hosting:** Render.com
 
 
 ## 🏗 Setup & Installation
