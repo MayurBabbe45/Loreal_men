@@ -1,7 +1,7 @@
 # SleekSpeak
 
 ## 🌟 Overview
-**SleekSpeak** is a modern and intuitive web application designed to enhance communication and engagement. Whether for communities, businesses, or casual conversations, it offers a seamless and user-friendly interface.
+**SleekSpeak** is a modern social media platform designed to foster meaningful connections. Users can effortlessly create posts, engage with content through likes, and build their network by connecting with friends.
 
 ## 🚀 Features
 - 📝 **Create Posts** – Share your thoughts, experiences, and updates with your network.
@@ -16,6 +16,10 @@
 - **Authentication:** Firebase / JWT
 - **Hosting:** Render.com
 
+
+
+## 🌍 Live Demo
+🔗 **[SleekSpeak is Live!](https://loreal-men.onrender.com)**
 
 ## 🏗 Setup & Installation
 ```bash
@@ -32,10 +36,10 @@ npm install
 npm start
 ```
 
+
 ## 🛠 Contributing
-We welcome contributions! Feel free to **fork**, create a **branch**, and submit a **pull request**.
+We welcome contributions! Please **fork** the repository, create a **branch**, and submit a **pull request**.
 
 ---
 Made with ❤️ by **Tech Brews** 🚀
-
 
